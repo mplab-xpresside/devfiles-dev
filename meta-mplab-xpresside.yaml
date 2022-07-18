@@ -63,6 +63,9 @@ spec:
            name: xpressprojects
          - mountPath: "/home/lib/packs"
            name: packs
+     volumeMounts:
+         - mountPath: "/home/lib/packs"
+           name: packs
      mountSources: true
      ports:
          - exposedPort: 3000
