@@ -62,7 +62,7 @@ spec:
          - mountPath: "/home/projects"
            name: xpressprojects
      volumeMounts:
-         - mountPath: "/home/lib/packs"
+         - mountPath: "/home/lib/packs2"
            name: packs
      mountSources: true
      ports:
