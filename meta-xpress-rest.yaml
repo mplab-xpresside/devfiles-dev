@@ -27,7 +27,9 @@ spec:
      mountSources: true
      env:
      - name: JAVA_OPTS
-       value: "-XX:+UseParallelGC -Xmx1g"
+       value: "-XX:+UseParallelGC -Xmx1g -XX:MaxRAMPercentage=75"
+     - name: JAVA_OPTIONS
+       value: "-XX:+UseParallelGC -Xmx1g -XX:MaxRAMPercentage=75"
      ports:
        - exposedPort: 8080
      memoryLimit: "2Gi"
