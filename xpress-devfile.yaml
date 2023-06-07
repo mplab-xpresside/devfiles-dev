@@ -17,6 +17,12 @@ components:
     volumes:
       - name: xpressprojects
         containerPath: /home/projects
+      - name: packs-pv
+        hostPath:
+        # directory location on host
+        path: /home/lib/packs
+        # this field is optional
+        type: Directory
     endpoints:
       - name: mcc-view-server
         port: 2000
