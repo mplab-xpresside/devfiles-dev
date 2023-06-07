@@ -61,8 +61,8 @@ spec:
            name: plugins
          - mountPath: "/home/projects"
            name: xpressprojects
-        - mountPath: "/home/lib/packs"
-          name: packs-pv
+         - mountPath: "/home/lib/packs"
+           name: packs-pv
      mountSources: true
      ports:
          - exposedPort: 3000
