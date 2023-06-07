@@ -18,6 +18,7 @@ components:
       - name: xpressprojects
         containerPath: /home/projects
       - name: packs-pv
+        containerPath: /home/lib/packs
         hostPath:
           # directory location on host
           path: /home/lib/packs
