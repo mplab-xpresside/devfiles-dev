@@ -31,10 +31,3 @@ spec:
      ports:
        - exposedPort: 8080
      memoryLimit: "2Gi"
-     volumeMounts:
-        - name: packs-pv
-          mountPath: /home/lib/temp
-   volumes:
-   - name: packs-pv
-     persistentVolumeClaim:
-       claimName: packs-pv-claim
